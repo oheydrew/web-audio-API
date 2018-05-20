@@ -16,8 +16,7 @@ function initAudioContext() {
 
 // Load a sound into the AudioContext
 var keyStrokeBuffer = null;
-// loadAudio('/keypress.wav')
-loadAudio('https://storage.googleapis.com/www.oheydrew.me/stuff/keypress.wav')
+loadAudio('/keypress.wav')
 
 function loadAudio(url) {
   console.log(`Audio Load Request for: ${url}`)

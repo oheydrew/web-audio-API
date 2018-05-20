@@ -1,0 +1,92 @@
+* {
+    --color-bg-main: #666;
+    --color-bg-highlight: #bedead;
+    --color-font-main: #222;
+    --color-font-link: #0b5e55;
+    --color-font-link-hover: #0b7e57;
+    --color-font-link-visited: #0b5e55;
+  }
+  
+  body {
+    font-family: 'roboto';
+    color: var(--color-font-main);
+    background-color: var(--color-bg-main);
+  }
+  
+  a {
+    color: var(--color-font-link);
+  }
+  
+  a:hover {
+    color: var(--color-font-link-hover);
+  }
+  
+  contentbox {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    outline: none;
+    text-align: center;
+  
+    padding: 5%;
+    margin: 2.5% 10%;
+  
+    border: 2px solid var(--color-font-main);
+  
+    color: var(--color-font-main);
+    background-color: var(--color-bg-highlight);
+  }
+  
+  .caption {
+    opacity: .7;
+    font-size: smaller;
+    font-style: italic;
+  }
+  
+  textarea {
+    resize: none;
+    font-size: large;
+  }
+  
+  h1 {
+    margin: 0% 5% 5% 5%;
+  }
+  
+  button {
+    font-size: large;
+    padding: 15px;
+    min-width: 150px;
+  
+    border: 2px solid var(--color-font-main);
+    border-radius: 35px;
+  
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+  
+    color: var(--color-bg-highlight);
+    background-color: var(--color-font-link);
+    user-select: none;
+  
+    &:hover {
+      background-color: var(--color-font-link-hover);
+    }
+  
+    &:active {
+      color: var(--color-font-main);
+      background-color: var(--color-font-link-active);
+    }
+  
+    &:focus {
+      outline: none;
+    }
+  }
+  
+  .loading {
+    color: var(--color-font-link-hover);
+  }
+  
+  .warning {
+    color: red;
+  }

@@ -7,7 +7,8 @@ Used this guide to get going: [Getting Started With Web Audio API (html5rocks)](
 ### Things to add:
 
 - <strike>Simple effect on buttonpress</strike>
-- Input box with keyboard sounds?
+- <strike>Pitch slider</strike>
+- <strike>Input box with keyboard sounds?</strike>
 - Volume slider
 - Ability to choose file to play
 - Load and play multiple files (buffer array?)

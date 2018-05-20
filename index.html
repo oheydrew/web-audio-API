@@ -4,24 +4,31 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Learn JS</title>
+    <title>Web Audio API Test :D</title>
     <script defer src="/scripts/index.js"></script>
     <link rel="stylesheet" href="/styles/styles.css">
 </head>
 <body>
     <contentbox>
         <h1>Audio Test</h1>
-
-        Cross Origin Resource Sharing (CORS) required<br/><br/>
-
+        
+        <span class="loading" id="loadingWarning">Loading...</span><br/><br/>
+        
         <div class="slidecontainer">
             Pitch:
             <br/>
             <input type="range" min="-2400" max="2400" value="0" class="slider" id="pitchSlider">
         </div>
         <br/>
+
         <button type="submit" id="playButton" onclick="playSound(keyStrokeBuffer)">Audio Test</button>
+        <br/>
+
+        <p>
+            Try typing something!<br/>
+            <span class="caption">(Turn on your sound!)</span>
+        </p>
+        <textarea id="input-sillyText" name="sillytext" rows="3"></textarea>
     </contentbox>
-    
 </body>
 </html>

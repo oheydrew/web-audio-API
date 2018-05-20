@@ -9,9 +9,19 @@
     <link rel="stylesheet" href="/styles/styles.css">
 </head>
 <body>
-    <h1>Audio Test</h1>
+    <contentbox>
+        <h1>Audio Test</h1>
 
-    <button type="submit" id="playButton" onclick="">Try Me</button>
+        Cross Origin Resource Sharing (CORS) required<br/><br/>
+
+        <div class="slidecontainer">
+            Pitch:
+            <br/>
+            <input type="range" min="-2400" max="2400" value="0" class="slider" id="pitchSlider">
+        </div>
+        <br/>
+        <button type="submit" id="playButton" onclick="playSound(keyStrokeBuffer)">Audio Test</button>
+    </contentbox>
     
 </body>
 </html>

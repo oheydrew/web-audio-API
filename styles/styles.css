@@ -1,20 +1,75 @@
+* {
+    --color-bg-main: #666;
+    --color-bg-highlight: #bedead;
+    --color-font-main: #222;
+    --color-font-link: #0b5e55;
+    --color-font-link-hover: #0b7e57;
+    --color-font-link-visited: #0b5e55;
+}
+
 body {
     font-family: 'roboto';
-    color: #dddddd;
-    background-color: #222222;
+    color: var(--color-font-main);
+    background-color: var(--color-bg-main);
 }
 
-.bookShelf {
-    background-color: #333333;
-    padding: 10px;
+a {
+    color: var(--color-font-link);
 }
 
-.shelfHeader {
-    font-size: larger;
-    font-weight: bolder;
-    color: #FFFFFF;
+a:hover {
+    color: var(--color-font-link-hover);
 }
 
-.book {
-    margin-left: 20px;
+contentbox {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    outline: none;
+    text-align: center;
+
+    padding: 2.5%;
+    margin: 2.5% 10%;
+
+    border: 2px solid var(--color-font-main);
+
+    color: var(--color-font-main);
+    background-color: var(--color-bg-highlight);
+}
+
+content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+button {
+    font-size: large;
+    padding: 15px;
+    min-width: 150px;
+
+    border: 2px solid var(--color-font-main);
+    border-radius: 35px;
+
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+
+    color: var(--color-bg-highlight);
+    background-color: var(--color-font-link);
+    user-select: none;
+}
+
+button:hover {
+    background-color: var(--color-font-link-hover);
+}
+
+button:active {
+    color: var(--color-font-main);
+    background-color: var(--color-font-link-active);
+}
+
+button:focus {
+    outline: none;
 }
